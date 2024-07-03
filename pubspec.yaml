@@ -1,0 +1,44 @@
+name: shop_mart
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.1 <4.0.0"
+
+dependencies:
+  badges: ^3.1.2
+  carousel_slider: ^4.2.1
+  cupertino_icons: ^1.0.6
+  firebase_auth: ^4.19.0
+  firebase_core: ^2.28.0
+  flutter:
+    sdk: flutter
+  flutter_rating_bar: ^4.0.1
+  geocoding: ^3.0.0
+  geolocator: ^11.0.0
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  google_fonts: ^6.2.1
+  google_sign_in: ^6.2.1
+  http: ^1.2.1
+  readmore: ^3.0.0
+  smooth_page_indicator: ^1.1.0
+
+dev_dependencies:
+  change_app_package_name: ^1.1.0
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+  rename_app: ^1.3.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - lib/models/Image/splash/splashimage.png
+
+
