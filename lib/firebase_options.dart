@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -49,20 +43,43 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyA8Sh0kyl0lvvhTKb8SEpAHgGL9zxiby8s',
+    appId: '1:443675054724:web:14655dde39305fe6b168d1',
+    messagingSenderId: '443675054724',
+    projectId: 'retailshoes-96a15',
+    authDomain: 'retailshoes-96a15.firebaseapp.com',
+    storageBucket: 'retailshoes-96a15.appspot.com',
+    measurementId: 'G-5X11MKD6L4',
+  );
+
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAMFyPf2cU842v_BpxOBup2Qny0eqCAyec',
-    appId: '1:430373408135:android:4af4c48643498211d6d722',
-    messagingSenderId: '430373408135',
-    projectId: 'asroo-shop-c2f71',
-    storageBucket: 'asroo-shop-c2f71.appspot.com',
+    apiKey: 'AIzaSyD9Cs-dSKP7gVBzA205VGmF1hAfJBIN01U',
+    appId: '1:443675054724:android:4ade696e350323a7b168d1',
+    messagingSenderId: '443675054724',
+    projectId: 'retailshoes-96a15',
+    storageBucket: 'retailshoes-96a15.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBaBkZZpiNunBtGYS8Te6C9gzkKO9zm5dE',
-    appId: '1:430373408135:ios:f64590b3c83ed4aad6d722',
-    messagingSenderId: '430373408135',
-    projectId: 'asroo-shop-c2f71',
-    storageBucket: 'asroo-shop-c2f71.appspot.com',
-    iosBundleId: 'com.example.asrooShop',
+    apiKey: 'AIzaSyCgx--BJBuHAN4i01oLz8iaAAKqtGQwRzo',
+    appId: '1:443675054724:ios:9adcbb1de2fb10d9b168d1',
+    messagingSenderId: '443675054724',
+    projectId: 'retailshoes-96a15',
+    storageBucket: 'retailshoes-96a15.appspot.com',
+    iosClientId:
+        '443675054724-nv41mq40vfk7n3gohj4hlf8grpsi7rih.apps.googleusercontent.com',
+    iosBundleId: 'com.example.retailShoes',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCgx--BJBuHAN4i01oLz8iaAAKqtGQwRzo',
+    appId: '1:443675054724:ios:acb36ca0671d8b0ab168d1',
+    messagingSenderId: '443675054724',
+    projectId: 'retailshoes-96a15',
+    storageBucket: 'retailshoes-96a15.appspot.com',
+    iosClientId:
+        '443675054724-2r4r7srbp1d5fpvs44rlarp8q1uj8sus.apps.googleusercontent.com',
+    iosBundleId: 'com.example.retailShoes.RunnerTests',
   );
 }

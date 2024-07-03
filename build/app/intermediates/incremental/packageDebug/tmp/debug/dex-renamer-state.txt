@@ -1,7 +1,7 @@
-#Wed Jun 19 16:38:00 WIB 2024
-base.0=C\:\\project\\kuliah\\tugas\\Mobile Programming\\UTS\\Shop-Mart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-base.1=C\:\\project\\kuliah\\tugas\\Mobile Programming\\UTS\\Shop-Mart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
-base.2=C\:\\project\\kuliah\\tugas\\Mobile Programming\\UTS\\Shop-Mart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
+#Wed Jul 03 15:36:14 WIB 2024
+base.0=C\:\\project\\belajar\\shoesmart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.1=C\:\\project\\belajar\\shoesmart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+base.2=C\:\\project\\belajar\\shoesmart\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=classes2.dex
 path.2=classes3.dex

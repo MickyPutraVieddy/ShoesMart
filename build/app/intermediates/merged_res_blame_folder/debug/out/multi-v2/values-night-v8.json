@@ -4,7 +4,7 @@
             "outputFile": "com.mohamed.essam.shop_mart.app-mergeDebugResources-22:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\project\\kuliah\\tugas\\Mobile Programming\\UTS\\Shop-Mart\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\project\\belajar\\shoesmart\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

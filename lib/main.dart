@@ -16,8 +16,12 @@ import 'utils/theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await GetStorage.init();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyCY_Xv3lT6dM0bH_wqJQH-6-M-DEUiHWv8",
+          appId: "1:495969882636:android:1f7f58c3b5edfd44e85429",
+          messagingSenderId: "495969882636",
+          projectId: "retailshoesstorage"));
   runApp(const MyApp());
 }
 

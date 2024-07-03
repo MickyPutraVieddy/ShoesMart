@@ -1,0 +1,1 @@
+ C:\\project\\belajar\\shoesmart\\.dart_tool\\flutter_build\\39e7077ace06475107ab77f373663289\\native_assets.yaml: 

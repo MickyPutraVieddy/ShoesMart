@@ -40,5 +40,6 @@ flutter:
   assets:
     - assets/images/
     - lib/models/Image/splash/splashimage.png
+    - lib/models/Image/splash/gambar.jpg
 
 

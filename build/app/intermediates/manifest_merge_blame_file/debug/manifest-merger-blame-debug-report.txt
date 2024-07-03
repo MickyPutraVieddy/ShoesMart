@@ -13,17 +13,17 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:2:5-66
-15-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:2:22-64
+15-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:2:5-66
+15-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:2:22-64
 16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:3:5-78
-16-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:3:22-76
+16-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:3:5-78
+16-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:3:22-76
 17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-17-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:4:5-80
-17-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:4:22-78
+17-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:4:5-80
+17-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:4:22-78
 18    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-18-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:5:5-84
-18-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:5:22-82
+18-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:5:5-84
+18-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:5:22-82
 19    <!--
 20 Required to query activities that can process text, see:
 21         https://developer.android.com/training/package="com.mohamed.essam.shop_mart">
@@ -32,16 +32,16 @@
 24         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 25    -->
 26    <queries>
-26-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:27:5-32:15
+26-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:27:5-32:15
 27        <intent>
-27-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:28:9-31:18
+27-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:28:9-31:18
 28            <action android:name="android.intent.action.PROCESS_TEXT" />
-28-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:29:13-72
-28-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:29:21-70
+28-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:29:13-72
+28-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:29:21-70
 29
 30            <data android:mimeType="text/plain" />
-30-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:30:13-50
-30-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:30:19-48
+30-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:30:13-50
+30-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:30:19-48
 31        </intent>
 32    </queries>
 33
@@ -104,25 +104,25 @@
 80            android:value="2" />
 81
 82        <service
-82-->[:firebase_auth] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+82-->[:firebase_auth] C:\project\belajar\shoesmart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 83            android:name="com.google.firebase.components.ComponentDiscoveryService"
-83-->[:firebase_auth] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+83-->[:firebase_auth] C:\project\belajar\shoesmart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 84            android:directBootAware="true"
 84-->[com.google.firebase:firebase-common:20.4.2] C:\Users\micky\.gradle\caches\transforms-3\89c6fd71728d0adae7dd67686aa1cdf7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
 85            android:exported="false" >
 85-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\micky\.gradle\caches\transforms-3\a6bd6391ef21328897caf6e03a97abbd\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
 86            <meta-data
-86-->[:firebase_auth] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+86-->[:firebase_auth] C:\project\belajar\shoesmart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 87                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-87-->[:firebase_auth] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+87-->[:firebase_auth] C:\project\belajar\shoesmart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 88                android:value="com.google.firebase.components.ComponentRegistrar" />
-88-->[:firebase_auth] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+88-->[:firebase_auth] C:\project\belajar\shoesmart\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 89            <meta-data
-89-->[:firebase_core] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+89-->[:firebase_core] C:\project\belajar\shoesmart\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 90                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-90-->[:firebase_core] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+90-->[:firebase_core] C:\project\belajar\shoesmart\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
 91                android:value="com.google.firebase.components.ComponentRegistrar" />
-91-->[:firebase_core] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+91-->[:firebase_core] C:\project\belajar\shoesmart\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 92            <meta-data
 92-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\micky\.gradle\caches\transforms-3\a6bd6391ef21328897caf6e03a97abbd\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
 93                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -143,15 +143,15 @@
 100-->[com.google.firebase:firebase-common:20.4.2] C:\Users\micky\.gradle\caches\transforms-3\89c6fd71728d0adae7dd67686aa1cdf7\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
 101        </service>
 102        <service
-102-->[:geolocator_android] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:56
+102-->[:geolocator_android] C:\project\belajar\shoesmart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:56
 103            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-103-->[:geolocator_android] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-77
+103-->[:geolocator_android] C:\project\belajar\shoesmart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-77
 104            android:enabled="true"
-104-->[:geolocator_android] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-35
+104-->[:geolocator_android] C:\project\belajar\shoesmart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-35
 105            android:exported="false"
-105-->[:geolocator_android] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+105-->[:geolocator_android] C:\project\belajar\shoesmart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
 106            android:foregroundServiceType="location" />
-106-->[:geolocator_android] C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-53
+106-->[:geolocator_android] C:\project\belajar\shoesmart\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-53
 107
 108        <activity
 108-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\micky\.gradle\caches\transforms-3\a6bd6391ef21328897caf6e03a97abbd\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
@@ -179,7 +179,7 @@
 118-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\micky\.gradle\caches\transforms-3\a6bd6391ef21328897caf6e03a97abbd\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
 119
 120                <data
-120-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:30:13-50
+120-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:30:13-50
 121                    android:host="firebase.auth"
 122                    android:path="/"
 123                    android:scheme="genericidp" />
@@ -211,7 +211,7 @@
 136-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\micky\.gradle\caches\transforms-3\a6bd6391ef21328897caf6e03a97abbd\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
 137
 138                <data
-138-->C:\project\kuliah\tugas\Mobile Programming\UTS\Shop-Mart\android\app\src\main\AndroidManifest.xml:30:13-50
+138-->C:\project\belajar\shoesmart\android\app\src\main\AndroidManifest.xml:30:13-50
 139                    android:host="firebase.auth"
 140                    android:path="/"
 141                    android:scheme="recaptcha" />
