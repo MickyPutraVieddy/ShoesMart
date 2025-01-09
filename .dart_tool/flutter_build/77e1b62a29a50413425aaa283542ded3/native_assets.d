@@ -1,1 +1,0 @@
- C:\\project\\kuliah\\tugas\\Mobile\ Programming\\UTS\\Shop-Mart\\.dart_tool\\flutter_build\\77e1b62a29a50413425aaa283542ded3\\native_assets.yaml: 

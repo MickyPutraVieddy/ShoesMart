@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:shop_mart/logic/controllers/cart_controller.dart';
 
 import '../../models/facebook_model.dart';
 import '../../routes/routes.dart';
@@ -23,6 +25,8 @@ class AuthController extends GetxController {
 
   User? get userProfile => auth.currentUser;
 
+  // Firestore instance
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   String capitalize(String profileName) {
     return profileName.split(' ').map((name) => name.capitalize).join(' ');
   }
@@ -48,6 +52,19 @@ class AuthController extends GetxController {
     update();
   }
 
+  Future<void> _storeUserRegisterData(String name, String email) async {
+    try {
+      await _firestore.collection('register').doc(auth.currentUser!.uid).set({
+        'name': name,
+        'email': email,
+        'createdAt': Timestamp.now(),
+      });
+      print('User data stored in register collection successfully!');
+    } catch (error) {
+      print('Error storing user data in register collection: $error');
+    }
+  }
+
   void signUpUsingFirebase({
     required String name,
     required String email,
@@ -59,6 +76,12 @@ class AuthController extends GetxController {
           .then((value) {
         displayUserName.value = name;
         auth.currentUser!.updateDisplayName(name);
+
+        // Store user data in Firestore upon successful signup
+        _storeUserData(name, email);
+
+        // Store user data in 'register' collection upon successful signup
+        _storeUserRegisterData(name, email);
       });
       update();
       Get.offNamed(Routes.loginScreen);
@@ -89,15 +112,16 @@ class AuthController extends GetxController {
       );
     }
   }
+
   void bypassLogin() {
-  displayUserName.value = "Test User";
-  displayUserEmail.value = "testuser@example.com";
-  displayUserPhoto.value = ""; // Add a test photo URL if needed
-  isSignIn = true;
-  authBox.write('auth', isSignIn);
-  update();
-  Get.offNamed(Routes.mainScreen);
-}
+    displayUserName.value = "Test User";
+    displayUserEmail.value = "testuser@example.com";
+    displayUserPhoto.value = ""; // Add a test photo URL if needed
+    isSignIn = true;
+    authBox.write('auth', isSignIn);
+    update();
+    Get.offNamed(Routes.mainScreen);
+  }
 
   void logInUsingFirebase({
     required String email,
@@ -111,6 +135,13 @@ class AuthController extends GetxController {
       });
       isSignIn = true;
       authBox.write('auth', isSignIn);
+
+      // Retrieve and display user data from Firestore upon login
+      _retrieveUserData(email);
+
+      // Fetch cart data after user login
+      Get.find<CartController>().fetchCartFromFirestore();
+
       update();
       Get.offNamed(Routes.mainScreen);
     } on FirebaseAuthException catch (error) {
@@ -161,6 +192,12 @@ class AuthController extends GetxController {
       isSignIn = true;
       authBox.write('auth', isSignIn);
 
+      // Store user data in Firestore upon successful Google signup
+      _storeUserData(googleUser.displayName!, googleUser.email);
+
+      // Fetch cart data after user login
+      Get.find<CartController>().fetchCartFromFirestore();
+
       update();
       Get.offNamed(Routes.mainScreen);
     } catch (error) {
@@ -175,18 +212,40 @@ class AuthController extends GetxController {
     }
   }
 
-  // void facebookSignUpApp() async {
-  //   final LoginResult loginResult = await FacebookAuth.instance.login();
-  //   if (loginResult.status == LoginStatus.success) {
-  //     final data = await FacebookAuth.instance.getUserData();
-  //     facebookModel = FaceBookModel.fromJson(data);
-  //     isSignIn = true;
-  //     authBox.write('auth', isSignIn);
+  // Store user data in Firestore
+  Future<void> _storeUserData(String name, String email) async {
+    try {
+      await _firestore.collection('login').doc(auth.currentUser!.uid).set({
+        'name': name,
+        'email': email,
+        'createdAt': Timestamp.now(),
+      });
+    } catch (error) {
+      print('Error storing user data: $error');
+    }
+  }
 
-  //     update();
-  //     Get.offNamed(Routes.mainScreen);
-  //   }
-  // }
+  // Retrieve user data from Firestore
+  Future<void> _retrieveUserData(String email) async {
+    try {
+      var userData = await _firestore
+          .collection('login')
+          .where('email', isEqualTo: email)
+          .get();
+
+      if (userData.docs.isNotEmpty) {
+        var user = userData.docs.first;
+        print('User Data Retrieved: ${user.data()}');
+        // Example: Update displayUserName with retrieved name
+        displayUserName.value = user['name'];
+        // Update other user information as needed
+      } else {
+        print('No user data found for email: $email');
+      }
+    } catch (error) {
+      print('Error retrieving user data: $error');
+    }
+  }
 
   void resetPassword(String email) async {
     try {

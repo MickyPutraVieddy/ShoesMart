@@ -18,7 +18,7 @@ class ImageSliders extends StatefulWidget {
 }
 
 class _ImageSlidersState extends State<ImageSliders> {
-  CarouselController carouselController = CarouselController();
+  CarouselControllerImpl carouselController = CarouselControllerImpl();
   final cartController = Get.put(CartController());
 
   int currentIndex = 0;
@@ -140,7 +140,6 @@ class _ImageSlidersState extends State<ImageSliders> {
                   return badges.Badge(
                     position: badges.BadgePosition.topEnd(top: -10, end: -10),
                     badgeAnimation: const badges.BadgeAnimation.slide(),
-                    
                     badgeContent: Text(
                       cartController.quantity().toString(),
                       style: const TextStyle(color: Colors.white),
